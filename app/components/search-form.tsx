@@ -23,18 +23,20 @@ export function SearchForm({ initialQuery = "" }: { initialQuery?: string }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
       <div className="relative flex-grow">
         <Search className="absolute left-2 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
         <Input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search for PDF books..."
-          className="pl-8"
+          placeholder="Excavate PDF books..."
+          className="pl-8 w-full"
         />
       </div>
-      <Button type="submit">Search</Button>
+      <Button type="submit" className="w-full sm:w-auto">
+        Unearth
+      </Button>
     </form>
   )
 }
