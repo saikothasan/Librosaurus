@@ -26,9 +26,9 @@ export function AdvancedSearch() {
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger asChild>
-        <Button variant="outline" className="mt-2">
+        <Button variant="outline" className="mt-2 w-full sm:w-auto">
           <Settings className="mr-2 h-4 w-4" />
-          Advanced Search
+          Advanced Excavation
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-80">
