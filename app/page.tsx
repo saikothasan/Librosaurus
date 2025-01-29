@@ -15,9 +15,9 @@ export default function Home({
 
   return (
     <div className="space-y-8">
-      <section>
-        <h1 className="text-4xl font-bold mb-4">Welcome to Librosaurus</h1>
-        <p className="text-xl text-muted-foreground mb-6">
+      <section className="text-center sm:text-left">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4">Welcome to Librosaurus</h1>
+        <p className="text-lg sm:text-xl text-muted-foreground mb-6">
           Unearth knowledge: Excavate and download free PDF books from our prehistoric collection.
         </p>
         <SearchForm initialQuery={query} />
@@ -39,7 +39,7 @@ function SearchResultsSkeleton() {
     <div className="space-y-4">
       {[...Array(5)].map((_, i) => (
         <div key={i} className="space-y-2">
-          <Skeleton className="h-4 w-1/4" />
+          <Skeleton className="h-4 w-full sm:w-1/4" />
           <Skeleton className="h-4 w-full" />
           <Skeleton className="h-4 w-full" />
         </div>
